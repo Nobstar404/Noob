@@ -2,8 +2,8 @@
 
 // For use by Noob application
 
-#include <stdio.h>
 #include "Noob/Application.h"
+#include "Noob/Log.h"
 
 // --Entry point--
 #include "Noob/EntryPoint.h"

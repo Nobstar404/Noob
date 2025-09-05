@@ -4,6 +4,9 @@
     <Filter Include="Noob">
       <UniqueIdentifier>{F3BB897C-DFF2-8A0D-88DF-701074F5060F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Noob\Events">
+      <UniqueIdentifier>{7718DC0C-E3CD-5402-6CC2-4ED9D8764B06}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Noob.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Noob\EntryPoint.h">
       <Filter>Noob</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Noob\Events\ApplicationEvent.h">
+      <Filter>Noob\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Noob\Events\Event.h">
+      <Filter>Noob\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Noob\Events\KeyEvent.h">
+      <Filter>Noob\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Noob\Events\MouseEvent.h">
+      <Filter>Noob\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Noob\Log.h">
       <Filter>Noob</Filter>

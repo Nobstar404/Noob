@@ -4,6 +4,7 @@
 
 #include "Core.h"
 #include "spdlog/spdlog.h"
+#include "spdlog/fmt/ostr.h"
 
 namespace Noob {
 
@@ -21,7 +22,7 @@ namespace Noob {
 
 }
 
-// Core log Macros
+// Core log macros
 #define NB_CORE_TRACE(...)	::Noob::Log::GetCoreLogger()->trace(__VA_ARGS__)
 #define NB_CORE_INFO(...)	::Noob::Log::GetCoreLogger()->info(__VA_ARGS__)
 #define NB_CORE_WARN(...)	::Noob::Log::GetCoreLogger()->warn(__VA_ARGS__)

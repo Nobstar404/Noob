@@ -7,6 +7,9 @@
     <Filter Include="Noob\Events">
       <UniqueIdentifier>{7718DC0C-E3CD-5402-6CC2-4ED9D8764B06}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Noob\Platform">
+      <UniqueIdentifier>{A71962D0-13DA-DD06-DC14-2784489422E3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Noob.h" />
@@ -34,6 +37,9 @@
     <ClInclude Include="src\Noob\Log.h">
       <Filter>Noob</Filter>
     </ClInclude>
+    <ClInclude Include="src\Noob\Platform\WindowsWindow.h">
+      <Filter>Noob\Platform</Filter>
+    </ClInclude>
     <ClInclude Include="src\nbpch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -43,6 +49,10 @@
     <ClCompile Include="src\Noob\Log.cpp">
       <Filter>Noob</Filter>
     </ClCompile>
+    <ClCompile Include="src\Noob\Platform\WindowsWIndow.cpp">
+      <Filter>Noob\Platform</Filter>
+    </ClCompile>
     <ClCompile Include="src\nbpch.cpp" />
+    <ClCompile Include="src\Noob\Window.h" />
   </ItemGroup>
 </Project>

@@ -4,11 +4,13 @@
 #include "Noob/Events/ApplicationEvent.h"
 #include "Noob/Log.h"
 
+#include <GLFW/glfw3.h>
+
 namespace Noob {
 
 	Application::Application()
 	{
-
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -16,14 +18,13 @@ namespace Noob {
 
 	}
 
-
 	void Application::Run()
 	{
-		WindowResizeEvent e(1280, 720);
-		NB_TRACE(e);
-
-		//NB_TRACE("Window resized to {}x{}", e.GetWidth(), e.GetHeight());
-
-		while (true);
+		while (m_Runing)
+		{
+			glClearColor(1, 0, 0, 1);
+			glClear(GL_COLOR_BUFFER_BIT);
+			m_Window->OnUpdate();
+		};
 	}
 }

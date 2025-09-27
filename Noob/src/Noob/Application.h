@@ -2,6 +2,8 @@
 
 #include "Core.h"
 #include "Events/Event.h"
+#include "Noob/Events/ApplicationEvent.h"
+
 #include "Window.h"
 
 namespace Noob {
@@ -13,13 +15,16 @@ namespace Noob {
 		virtual ~Application();
 
 		void Run();
+
+		void OnEvent(Event& e);
 	private:
+		bool OnWindowClose(WindowCloseEvent& e);
+
 		std::unique_ptr<Window> m_Window;
-		bool m_Runing;
+		bool m_Running;
 	};
 
 	// to be define in client
 	Application* CreateApplication();
 
 }
-
